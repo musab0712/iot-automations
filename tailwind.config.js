@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        playfair: ['var(--font-playfair)'],
+        playfairSc: ['var(--font-playfair-sc)'],
+      },
+    },
   },
   plugins: [],
 }
