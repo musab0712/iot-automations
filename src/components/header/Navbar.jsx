@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5";
 import { BsBox, BsCart, BsTools } from "react-icons/bs"; // Icons for dropdown
 import { navLinks } from "@/data/menu";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [sideMenu, setMenu] = useState(false);
@@ -15,7 +16,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className=" font-playfair bg-white lg:px-24 md:px-12 px-6 py-6 md:py-8 flex justify-between items-center shadow-md top-0 sticky z-50">
+    <nav className=" font-playfair bg-white lg:px-24 md:px-12 px-6 py-6 md:py-2 flex justify-between items-center shadow-md top-0 sticky z-50">
       {/* Logo and Mobile Menu Button */}
       <div className="flex items-center">
         <FiMenu
@@ -24,9 +25,16 @@ export default function Navbar() {
           aria-label="Open Menu"
         />
         <Link href="/">
-          <h1 className="font-bold text-2xl md:text-3xl text-blue-600 uppercase">
+          {/* <h1 className="font-bold  md:text-3xl text-blue-600 uppercase">
             IoT Auto Hub
-          </h1>
+          </h1> */}
+          <Image
+            className="text-6xl"
+            src="/logo.png"
+            alt="iot-auto-hub-logo"
+            width={100}
+            height={50}
+          />
         </Link>
       </div>
 
@@ -51,7 +59,7 @@ export default function Navbar() {
                   <Link
                     onClick={() => setMenu(false)}
                     href={nav.link}
-                    className="font-bold text-lg block hover:text-blue-500 uppercase"
+                    className="font-bold text-lg block hover:text-blue-500"
                   >
                     {nav.label}
                   </Link>
@@ -71,7 +79,7 @@ export default function Navbar() {
               <li key={index} className="relative group">
                 <Link
                   href={nav.link}
-                  className="font-bold text-lg hover:text-blue-500 transition-colors flex items-center uppercase"
+                  className="font-bold text-lg hover:text-blue-500 transition-colors flex items-center"
                 >
                   {nav.label}
                 </Link>
@@ -84,7 +92,7 @@ export default function Navbar() {
                         href="/product/water-level-monitering"
                         className="text-gray-800 hover:text-blue-500"
                       >
-                        Water Level Monitering
+                        Water Automation
                       </Link>
                     </li>
                     <li className="flex items-center">
@@ -93,7 +101,7 @@ export default function Navbar() {
                         href="/product/pressure-protection"
                         className="text-gray-800 hover:text-blue-500"
                       >
-                        Pressure Protection
+                        Electric Panel Automation
                       </Link>
                     </li>
                     <li className="flex items-center">
@@ -102,67 +110,13 @@ export default function Navbar() {
                         href="/product/dry-run"
                         className="text-gray-800 hover:text-blue-500"
                       >
-                        Dry Run Protection
-                      </Link>
-                    </li>
-                    <li className="flex items-center">
-                      <BsBox className="text-blue-500 mr-3" />
-                      <Link
-                        href="/product/fully-automatic-water"
-                        className="text-gray-800 hover:text-blue-500"
-                      >
-                        Fully Water Automation
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            );
-          }
-          /* Solutions dropdown */
-          if (nav.label === "Solutions") {
-            return (
-              <li key={index} className="relative group">
-                <Link
-                  href={nav.link}
-                  className="font-bold text-lg hover:text-blue-500 transition-colors flex items-center uppercase"
-                >
-                  {nav.label}
-                </Link>
-                {/* Dropdown Menu */}
-                <div className="absolute -left-14  top-10 w-[300px] mt-2 bg-white shadow-lg rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform -translate-y-2 transition-all z-50">
-                  <ul className="space-y-4">
-                    <li className="flex items-center">
-                      <BsBox className="text-blue-500 mr-3" />
-                      <Link
-                        href="/solution/water-automation"
-                        className="text-gray-800 hover:text-blue-500"
-                      >
-                        Water Automation
-                      </Link>
-                    </li>
-                    <li className="flex items-center">
-                      <BsCart className="text-blue-500 mr-3" />
-                      <Link
-                        href="/solution/electric-panel"
-                        className="text-gray-800 hover:text-blue-500"
-                      >
-                        Electric Panel Automation
-                      </Link>
-                    </li>
-                    <li className="flex items-center">
-                      <BsTools className="text-blue-500 mr-3" />
-                      <Link
-                        href="/solution/building-automation"
-                        className="text-gray-800 hover:text-blue-500"
-                      >
                         Building Automation System
                       </Link>
                     </li>
                     <li className="flex items-center">
                       <BsBox className="text-blue-500 mr-3" />
                       <Link
-                        href="/solution/customised-automation"
+                        href="/product/fully-automatic-water"
                         className="text-gray-800 hover:text-blue-500"
                       >
                         Customised Automation Solution
@@ -173,12 +127,11 @@ export default function Navbar() {
               </li>
             );
           }
-
           return (
             <li key={index}>
               <Link
                 href={nav.link}
-                className="font-bold text-lg hover:text-blue-500 transition-colors uppercase"
+                className="font-bold text-lg hover:text-blue-500 transition-colors"
               >
                 {nav.label}
               </Link>
