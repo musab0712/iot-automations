@@ -1,12 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 import Image from "next/image";
 
 export default function StickySection() {
   return (
-    <div className=" lg:sticky lg:top-20 lg:h-screen w-full pt:10 lg:w-1/2 md:pt-20">
+    <div className=" font-playfair lg:sticky lg:top-20 lg:h-screen w-full pt:10 lg:w-1/2 md:pt-20">
       <p className="text-blue-600 pb-3 uppercase font-bold text-xl md:text-3xl">
         Why Automate your system with IoT
       </p>

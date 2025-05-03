@@ -5,7 +5,7 @@ import whyContentData from "@/data/whyContent";
 
 export default function ContentSection() {
   return (
-    <div className="w-full pt-4 lg:w-1/2 md:pl-36 md:pt-20">
+    <div className=" font-playfair w-full pt-4 lg:w-1/2 md:pl-36 md:pt-20">
       {whyContentData.map((content) => (
         <Fragment key={content.id}>
           <Image width={500} height={500} src={content.imgSrc} alt="hero img" />
