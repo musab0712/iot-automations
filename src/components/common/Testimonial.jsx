@@ -40,7 +40,106 @@ const testimonials = [
 
 export default function TestimonialsSlider() {
   return (
-    <section className=" font-playfair relative bg-[#111827] text-white py-20 px-4">
+    <>
+      <section className=" font-playfair relative bg-[#1f2b45] text-white py-24 px-4 overflow-hidden">
+        {/* Radial Gradient Blurs */}
+        <div className="absolute top-[-20%] left-[-10%] w-[400px] h-[400px] bg-purple-500 opacity-30 rounded-full blur-3xl z-0"></div>
+
+        <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] bg-purple-500 opacity-30 rounded-full blur-3xl z-0 transform -translate-x-1/2 -translate-y-1/2"></div>
+
+        <div className="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] bg-pink-500 opacity-20 rounded-full blur-2xl z-0"></div>
+
+        {/* Optional Noise Texture */}
+        {/* <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-10 z-0"></div> */}
+
+        {/* Content Wrapper */}
+        <div className="relative z-10 max-w-6xl mx-auto">
+          {/* ...Your existing content (headings, Swiper, etc.) */}
+          <motion.div
+            className="flex flex-col md:flex-row justify-between items-start mb-10 w-full"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="w-1/2">
+              <h4 className="text-blue-400 text-2xl font-medium mb-2">
+                Testimonial
+              </h4>
+              <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+                Kind Words
+                <br />
+                from our Customers
+              </h2>
+            </div>
+            <div className="w-1/2 hidden md:block">
+              <div className="flex justify-end gap-4 mt-24 pr-4 ">
+                <button className="prev-button w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                  &larr;
+                </button>
+                <button className="next-button w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
+                  &rarr;
+                </button>
+              </div>
+            </div>
+          </motion.div>
+
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            navigation={{
+              nextEl: ".next-button",
+              prevEl: ".prev-button",
+            }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            spaceBetween={30}
+            loop
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              1024: { slidesPerView: 2 },
+            }}
+          >
+            {testimonials.map((t, index) => (
+              <SwiperSlide key={index}>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="h-full"
+                >
+                  <div className="rounded-2xl backdrop-blur-md bg-white/10 border border-white/20 p-8 shadow-xl flex flex-col justify-between h-full">
+                    <div className="text-yellow-400 text-4xl md:text-6xl mb-2">
+                      “
+                    </div>
+                    <p className="text-white text-lg leading-relaxed mb-6">
+                      {t.quote}
+                    </p>
+                    <div className="flex items-center gap-4">
+                      <img
+                        src={t.avatar}
+                        alt={t.name}
+                        className="w-12 h-12 rounded-full object-cover"
+                      />
+                      <div>
+                        <h4 className="text-white font-bold text-xl">
+                          {t.name}
+                        </h4>
+                        <p className="text-base text-gray-400">{t.role}</p>
+                      </div>
+                      <div className="ml-auto bg-white/90 px-3 py-1 rounded-full text-yellow-500 font-bold text-sm flex gap-1">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <span key={i}>★</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+
+      {/* <section className=" font-playfair relative bg-[#111827] text-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="flex flex-col md:flex-row justify-between items-start mb-10 w-full"
@@ -122,7 +221,7 @@ export default function TestimonialsSlider() {
           ))}
         </Swiper>
 
-        {/* Navigation Buttons
+        Navigation Buttons
         <div className="flex justify-end gap-4 mt-6 pr-4">
           <button className="prev-button w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
             &larr;
@@ -130,8 +229,9 @@ export default function TestimonialsSlider() {
           <button className="next-button w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-black transition">
             &rarr;
           </button>
-        </div> */}
+        </div>
       </div>
-    </section>
+    </section> */}
+    </>
   );
 }

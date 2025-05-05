@@ -44,7 +44,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <div className=" font-playfair lg:px-24 px-6 md:px-12 relative overflow-hidden bg-white py-12 text-center">
+    <div className=" font-playfair lg:px-24 px-6 md:px-12 relative overflow-hidden bg-white py-12 md:py-20 text-center border-t border-b border-gray-200">
       <div
         className="absolute bottom-0 left-0 w-full h-40 bg-bottom bg-no-repeat bg-cover z-0"
         style={{ backgroundImage: "url('/features/wood-bg.svg')" }}
@@ -70,13 +70,13 @@ export default function FeaturesSection() {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {features.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="bg-[#e3e7ec] h-[400px] shadow-md rounded-xl p-6 mx-4 flex flex-col justify-start">
-              <div className="text-5xl text-blue-600 mb-4">{item.icon}</div>
+              <div className="text-7xl text-blue-600 mb-5">{item.icon}</div>
               <h3 className="text-xl font-semibold my-4 text-blue-700">
                 {item.title}
               </h3>
