@@ -1,6 +1,12 @@
-import { Geist, Geist_Mono, Playfair_Display, Playfair_Display_SC } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Playfair_Display,
+  Playfair_Display_SC,
+} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/header/Navbar";
+import Footer from "@/components/footer/Footer";
 
 export const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -23,11 +29,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${playfairSc.variable}`}>
-      <body >
+      <body>
         {/* <Topbar/> */}
         <Navbar />
         {children}
-
+        <Footer />
       </body>
     </html>
   );
