@@ -12,7 +12,7 @@ export default function AboutUs() {
         subheadline="Discover the Future of Automotive Technology with IoT Auto Hub"
       />
       <WhatWeDoSection />
-      {/* <MissionAndVisonSection /> */}
+      <MissionAndVisonSection />
     </main>
   );
 }
