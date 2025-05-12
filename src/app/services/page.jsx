@@ -1,11 +1,11 @@
 import Banner from "@/components/common/Banner";
 
-export default function ContactUs() {
+export default function Services() {
   return (
     <main>
       <Banner
         videoSrc="/videos/about-us.mp4"
-        headline="Contact Us"
+        headline="Our Services"
         subheadline="Discover the Future of Automotive Technology with IoT Auto Hub"
       />
     </main>
