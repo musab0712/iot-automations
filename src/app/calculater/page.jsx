@@ -1,5 +1,7 @@
 import AutomationCalculator from "@/components/common/AutomationCalculater";
 import Banner from "@/components/common/Banner";
+import Cta from "@/components/common/Cta";
+import TestimonialsSlider from "@/components/common/Testimonial";
 
 export default function Calculater() {
   return (
@@ -10,6 +12,8 @@ export default function Calculater() {
         subheadline="Discover the Future of Automotive Technology with IoT Auto Hub"
       />
       <AutomationCalculator />
+      <Cta />
+      <TestimonialsSlider />
     </main>
   );
 }
