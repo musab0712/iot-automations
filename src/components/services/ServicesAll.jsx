@@ -63,7 +63,7 @@ export default function ServicesAll() {
             </motion.p> */}
 
             <Link
-              href="/services"
+              href={"/service/" + data.slug}
               className="bg-blue-600 w-24 md:w-56 px-6 py-3 md:px-8 md:py-4 text-xl rounded-2xl font-semibold hover:bg-blue-800 transition flex items-center gap-2 text-white "
             >
               <span className=" hidden lg:block uppercase pr-3">Read More</span>

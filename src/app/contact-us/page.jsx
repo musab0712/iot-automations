@@ -1,4 +1,6 @@
 import Banner from "@/components/common/Banner";
+import ContactUsSection from "@/components/common/ContactUs";
+import TestimonialsSlider from "@/components/common/Testimonial";
 
 export default function ContactUs() {
   return (
@@ -8,6 +10,8 @@ export default function ContactUs() {
         headline="Contact Us"
         subheadline="Discover the Future of Automotive Technology with IoT Auto Hub"
       />
+      <ContactUsSection />
+      <TestimonialsSlider />
     </main>
   );
 }
