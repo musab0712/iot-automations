@@ -26,14 +26,14 @@ export default function Services() {
               delay: 0.2,
             }}
             whileHover={{ scale: 1.05, y: -5 }}
-            className=" text-2xl md:text-5xl font-extrabold pb-8 uppercase"
+            className=" text-xl md:text-2xl font-extrabold pb-8 uppercase"
           >
             Unlock the potential of technology-driven and create a smarter, more
             sustainable future
           </motion.h1>
         </div>
         <div className="w-full md:w-1/3 md:pl-5">
-          <p className="pb-10 md:pb-20 lg:pb-20 font-bold md:text-xl lg:text-3xl text-blue-600 text-right">
+          <p className="pb-10 md:pb-20 lg:pb-20 font-bold md:text-lg lg:text-xl text-blue-600 text-right">
             SERVICES
           </p>
         </div>

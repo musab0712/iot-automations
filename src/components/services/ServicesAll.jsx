@@ -25,7 +25,7 @@ export default function ServicesAll() {
               index % 2 === 0 ? "lg:pr-16" : "lg:pl-16"
             }`}
           >
-            <p className="hidden md:block md:text-xl lg:text-2xl font-bold text-blue-500">
+            <p className="hidden md:block md:text-lg lg:text-xl font-bold text-blue-500">
               SERVICE 0{data.id}
             </p>
             <div className="pb-6 md:pb-8 md:pt-20">
@@ -45,7 +45,7 @@ export default function ServicesAll() {
                 ease: "easeInOut",
                 delay: 0.2,
               }}
-              className=" text-base md:text-lg lg:text-xl  md:pb-28 pb-5"
+              className=" text-base md:text-lg  md:pb-28 pb-5"
             >
               {data.data}
             </motion.p>
@@ -82,7 +82,7 @@ export default function ServicesAll() {
                 delay: 0.2,
               }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className=" text-2xl md:text-4xl font-extrabold pb-8 md:pb-12 pt-6 lg:pt-0 uppercase text-blue-500"
+              className=" text-xl md:text-2xl font-extrabold pb-8 md:pb-12 pt-6 lg:pt-0 uppercase text-blue-500"
             >
               {data.title}
             </motion.h1>
