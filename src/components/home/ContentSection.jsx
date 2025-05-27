@@ -18,7 +18,7 @@ export default function ContentSection() {
               delay: 0.2,
             }}
             whileHover={{ scale: 1.05, y: -5 }}
-            className="text-2xl font-extrabold uppercase pt-4 md:pt-10 text-blue-600"
+            className="text-xl font-bold uppercase pt-4 md:pt-10 text-blue-600"
           >
             {content.title}
           </motion.h1>
@@ -30,7 +30,7 @@ export default function ContentSection() {
               ease: "easeInOut",
               delay: 0.2,
             }}
-            className=" pt-5 text-lg font-medium pb-6 md:pb-10"
+            className=" pt-5 text-base font-medium pb-6 md:pb-10"
           >
             {content.data}
           </motion.p>

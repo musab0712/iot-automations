@@ -7,7 +7,7 @@ export default function Why() {
   return (
     <section
       id="about"
-      className=" lg:px-24 px-6 md:px-12 container lg:relative flex flex-col lg:flex-row h-auto py-12 md:py-16"
+      className=" lg:px-24 px-6 md:px-12 container lg:relative flex flex-col lg:flex-row h-auto py-6 md:py-8"
     >
       {/* <Image
         src="/bg-icon/2.svg"

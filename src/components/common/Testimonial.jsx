@@ -41,7 +41,7 @@ const testimonials = [
 export default function TestimonialsSlider() {
   return (
     <>
-      <section className=" font-playfair relative bg-[#1f2b45] text-white py-24 px-4 overflow-hidden">
+      <section className=" font-playfair relative bg-[#1f2b45] text-white lg:px-24 md:px-12 px-6 py-10 md:py-20 overflow-hidden">
         {/* Radial Gradient Blurs */}
         <div className="absolute top-[-20%] left-[-10%] w-[400px] h-[400px] bg-purple-500 opacity-30 rounded-full blur-3xl z-0"></div>
 
@@ -56,16 +56,16 @@ export default function TestimonialsSlider() {
         <div className="relative z-10 max-w-6xl mx-auto">
           {/* ...Your existing content (headings, Swiper, etc.) */}
           <motion.div
-            className="flex flex-col md:flex-row justify-between items-start mb-10 w-full"
+            className="flex flex-col md:flex-row justify-between items-start mb-3 w-full"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             <div className="w-1/2">
-              <h4 className="text-blue-400 text-2xl font-medium mb-2">
+              <h4 className="text-blue-400 text-xl font-medium mb-2">
                 Testimonial
               </h4>
-              <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+              <h2 className="text-3xl md:text-3xl font-bold leading-tight">
                 Kind Words
                 <br />
                 from our Customers
@@ -107,10 +107,10 @@ export default function TestimonialsSlider() {
                   className="h-full"
                 >
                   <div className="rounded-2xl backdrop-blur-md bg-white/10 border border-white/20 p-8 shadow-xl flex flex-col justify-between h-full">
-                    <div className="text-yellow-400 text-4xl md:text-6xl mb-2">
+                    <div className="text-yellow-400 text-4xl md:text-6xl">
                       “
                     </div>
-                    <p className="text-white text-lg leading-relaxed mb-6">
+                    <p className="text-white text-base leading-relaxed mb-6">
                       {t.quote}
                     </p>
                     <div className="flex items-center gap-4">
@@ -120,7 +120,7 @@ export default function TestimonialsSlider() {
                         className="w-12 h-12 rounded-full object-cover"
                       />
                       <div>
-                        <h4 className="text-white font-bold text-xl">
+                        <h4 className="text-white font-bold text-lg">
                           {t.name}
                         </h4>
                         <p className="text-base text-gray-400">{t.role}</p>

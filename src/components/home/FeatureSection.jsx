@@ -17,7 +17,7 @@ const features = [
   },
   {
     title: "Easy To Install",
-    icon: "👍💰",
+    icon: "👍🛠️",
     description: `Our systems are easy to install with minimal wiring, no major changes, and quick setup—ready to use in no time. This means less hassle and more savings for you.`,
   },
   {
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: "Customer-Centric Approach",
-    icon: "👍💰",
+    icon: "🤝",
     description: `At IoT Auto Hub, we believe that every client is unique. Our dedicated team works closely with you to: Understand your specific challenges, Design and implement solutions tailored to your needs, and Provide ongoing support and maintenance for seamless operations.`,
   },
   {
@@ -37,7 +37,7 @@ const features = [
   },
   {
     title: "Future-Proof Technology & Integration",
-    icon: "👍💰",
+    icon: "🛠️⏰",
     description: `IoT auto hub automation is built on the latest technology, ensuring compatibility with existing systems and future innovations. Whether it’s AI-driven analytics, cloud integration, or smart sensors, your solutions keep businesses ahead of the competition.`,
   },
 ];
@@ -76,11 +76,11 @@ export default function FeaturesSection() {
         {features.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="bg-[#e3e7ec] h-[400px] shadow-md rounded-xl p-6 mx-4 flex flex-col justify-start">
-              <div className="text-7xl text-blue-600 mb-5">{item.icon}</div>
-              <h3 className="text-xl font-semibold my-4 text-blue-700">
+              <div className="text-6xl text-blue-600 mb-5">{item.icon}</div>
+              <h3 className="text-lg font-semibold my-4 text-blue-700">
                 {item.title}
               </h3>
-              <p className="text-base text-gray-800">{item.description}</p>
+              <p className="text-sm text-gray-800">{item.description}</p>
             </div>
           </SwiperSlide>
         ))}

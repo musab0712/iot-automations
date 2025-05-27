@@ -31,7 +31,7 @@ const FAQcontent = () => {
             <span className="hidden md:block text-xl pl-2 md:pl-5 pr-3 md:pr-6">
               {index + 1}.
             </span>
-            <span className="pr-2 md:pr-4 py-3 md:py-6 text-xl md:text-2xl font-bold ">
+            <span className="pr-2 md:pr-4 py-3 md:py-6 text-base md:text-lg font-bold ">
               {question.question}
             </span>
             <span className=" items-end">

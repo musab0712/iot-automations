@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className=" font-playfair bg-[#031338] text-white px-6 py-12">
+    <footer className=" font-playfair bg-[#031338] text-white lg:px-24 md:px-12 px-6 py-10 md:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* About Company */}
         <div>
@@ -128,7 +128,7 @@ export default function Footer() {
           <h2 className="text-xl font-bold mb-4">Contact us</h2>
           <div className="text-sm space-y-3">
             <p className="flex items-start gap-2">
-              <FaMapMarkerAlt className="mt-1" />
+              <FaMapMarkerAlt className="mt-1" size={30} />
               Office No.: 306-in 25/34, East Patel Nagar, Central Delhi, New
               Delhi, Delhi, India, 110008
             </p>
@@ -147,7 +147,7 @@ export default function Footer() {
                 href="mailto:info@dgsketch.com"
                 className="hover:text-blue-400 transition-colors"
               >
-                info@dgsketch.com
+                info@iotautohub.com
               </a>
             </p>
           </div>

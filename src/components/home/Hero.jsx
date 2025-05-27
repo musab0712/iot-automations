@@ -1,8 +1,8 @@
-'use client';
-import { useEffect, useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import { useEffect, useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const phrases = [
   "Water Automation",
@@ -29,7 +29,7 @@ export default function Hero() {
   }, [isHovered]);
 
   return (
-    <section className="relative w-full h-96 md:h-[700px]  flex items-center justify-center text-white">
+    <section className="relative w-full h-96 md:h-[520px]  flex items-center justify-center text-white">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -45,11 +45,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="text-center px-4 max-w-6xl">
-        <h1 className=" font-playfair text-4xl md:text-6xl font-bold mb-6 text-[#0a0147]">
-        Automate your all systems with IOT such as 
+        <h1 className=" font-playfair text-3xl md:text-4xl font-bold mb-6 text-[#0a0147]">
+          Automate your all systems with IOT such as
         </h1>
         <div
-          className="h-[60px] md:h-[80px] overflow-hidden relative mb-6"
+          className="h-[60px] md:h-[80px] overflow-hidden relative"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -60,25 +60,31 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -40 }}
               transition={{ duration: 0.6 }}
-              className="font-playfairSc text-4xl md:text-6xl font-bold text-[#004aad] absolute w-full"
+              className="font-playfairSc text-3xl md:text-4xl font-bold text-[#004aad] absolute w-full"
             >
               {phrases[index]}
             </motion.h2>
           </AnimatePresence>
         </div>
-        <p className=" font-playfair text-lg md:text-4xl mb-12 font-semibold text-[#545454]">
-        At IoT Auto Hub, we don’t just provide automation products, we redefine how infrastructure operates
+        <p className=" font-playfair text-lg md:text-2xl mb-12 font-semibold text-[#545454]">
+          At IoT Auto Hub, we don’t just provide automation products, we <br />
+          redefine how infrastructure operates
         </p>
         <div className="flex justify-center gap-4 md:gap-10 flex-wrap">
-          <Link href="/services" className=" font-playfair bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-2xl font-semibold hover:bg-gray-200 transition text-xl">
-              All Services
+          <Link
+            href="/services"
+            className=" font-playfair bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:bg-gray-200 transition text-base"
+          >
+            All Services
           </Link>
-          <Link href="/get-started" className=" font-playfair bg-blue-600 px-6 py-3 md:px-8 md:py-4 text-xl rounded-2xl font-semibold hover:bg-blue-800 transition">
-              Get Started
+          <Link
+            href="/get-started"
+            className=" font-playfair bg-blue-600 px-8 py-4 text-base rounded-2xl font-semibold hover:bg-blue-800 transition"
+          >
+            Get Started
           </Link>
         </div>
       </div>
     </section>
   );
 }
-

@@ -6,6 +6,14 @@ import { BsBox, BsCart, BsTools } from "react-icons/bs"; // Icons for dropdown
 import { navLinks } from "@/data/menu";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  FaTools,
+  FaMicrochip,
+  FaSatelliteDish,
+  FaCloud,
+  FaCogs,
+  FaLightbulb,
+} from "react-icons/fa";
 
 export default function Navbar() {
   const [sideMenu, setMenu] = useState(false);
@@ -87,7 +95,7 @@ export default function Navbar() {
                 <div className="absolute -right-18 top-10 w-64 mt-2 bg-white shadow-lg rounded-lg p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transform -translate-y-2 transition-all z-50">
                   <ul className="space-y-4">
                     <li className="flex items-center">
-                      <BsBox className="text-blue-500 mr-3" />
+                      <FaMicrochip className="text-2xl text-purple-500 mr-3" />
                       <Link
                         href="/product/water-level-monitering"
                         className="text-gray-800 hover:text-blue-500"
@@ -96,7 +104,7 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li className="flex items-center">
-                      <BsCart className="text-blue-500 mr-3" />
+                      <FaCogs className="text-2xl text-blue-500 mr-3" />
                       <Link
                         href="/product/pressure-protection"
                         className="text-gray-800 hover:text-blue-500"
@@ -105,7 +113,7 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li className="flex items-center">
-                      <BsTools className="text-blue-500 mr-3" />
+                      <FaSatelliteDish className="text-2xl text-pink-500 mr-3" />
                       <Link
                         href="/product/dry-run"
                         className="text-gray-800 hover:text-blue-500"
@@ -114,7 +122,7 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li className="flex items-center">
-                      <BsBox className="text-blue-500 mr-3" />
+                      <FaLightbulb className="text-2xl text-green-500 mr-3" />
                       <Link
                         href="/product/fully-automatic-water"
                         className="text-gray-800 hover:text-blue-500"

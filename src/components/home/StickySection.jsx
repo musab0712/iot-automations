@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function StickySection() {
   return (
-    <div className=" font-playfair lg:sticky lg:top-20 lg:h-screen w-full pt:10 lg:w-1/2 md:pt-20">
-      <p className="text-blue-600 pb-3 uppercase font-bold text-xl md:text-3xl">
+    <div className=" font-playfair lg:sticky lg:top-20 lg:h-screen w-full pt:6 lg:w-1/2 md:pt-6">
+      <p className="text-blue-600 pb-3 uppercase font-bold text-xl md:text-2xl">
         Why Automate your system with IoT
       </p>
       <div className="flex flex-col md:flex-row justify-between w-full">
@@ -18,7 +18,7 @@ export default function StickySection() {
               ease: "easeInOut",
               delay: 0.2,
             }}
-            className=" text-xl md:text-2xl font-bold"
+            className=" text-lg md:text-xl font-semibold"
           >
             Automating your system with Internet of Things (IoT) brings
             efficiency, convenience, and intelligence to operations by enabling
