@@ -30,7 +30,7 @@ export default function ServicesAll() {
             </p>
             <div className="pb-6 md:pb-8 md:pt-20">
               <Image
-                src={data.icon}
+                src={data.iconn}
                 width={50}
                 height={50}
                 alt="icon"

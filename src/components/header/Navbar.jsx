@@ -97,7 +97,7 @@ export default function Navbar() {
                     <li className="flex items-center">
                       <FaMicrochip className="text-2xl text-purple-500 mr-3" />
                       <Link
-                        href="/product/water-level-monitering"
+                        href="/service/water-automation"
                         className="text-gray-800 hover:text-blue-500"
                       >
                         Water Automation
@@ -106,7 +106,7 @@ export default function Navbar() {
                     <li className="flex items-center">
                       <FaCogs className="text-2xl text-blue-500 mr-3" />
                       <Link
-                        href="/product/pressure-protection"
+                        href="/service/electric-panel"
                         className="text-gray-800 hover:text-blue-500"
                       >
                         Electric Panel Automation
@@ -115,7 +115,7 @@ export default function Navbar() {
                     <li className="flex items-center">
                       <FaSatelliteDish className="text-2xl text-pink-500 mr-3" />
                       <Link
-                        href="/product/dry-run"
+                        href="/service/building-automation"
                         className="text-gray-800 hover:text-blue-500"
                       >
                         Building Automation System
@@ -124,7 +124,7 @@ export default function Navbar() {
                     <li className="flex items-center">
                       <FaLightbulb className="text-2xl text-green-500 mr-3" />
                       <Link
-                        href="/product/fully-automatic-water"
+                        href="/service/customised-automation"
                         className="text-gray-800 hover:text-blue-500"
                       >
                         Customised Automation Solution
