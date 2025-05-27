@@ -10,11 +10,13 @@ export default function MissionAndVisonSection() {
   const visionText =
     "To be a global leader in IoT, driving the future of interconnected systems with sustainability, security, and innovation at the forefront. Our vision is to create a world where technology empowers everyone.";
   return (
-    <section className="relative py-32 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
       <GlowingBackground count={25} />
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4">Our Mission and Vision</h2>
+        <h2 className="text-4xl font-bold mb-4 text-blue-600">
+          Our Mission and Vision
+        </h2>
         <p className="mb-6 text-lg text-gray-700">
           Empowering industries through smart, connected IoT automation.
         </p>
@@ -25,7 +27,7 @@ export default function MissionAndVisonSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center px-6 mb-20"
+          className="max-w-4xl mx-auto text-center px-6 "
         >
           {/* <h2 className="text-4xl font-semibold mb-8 text-gray-800">
             Our Mission and Vision
@@ -40,7 +42,7 @@ export default function MissionAndVisonSection() {
                   : "bg-white text-blue-600 border border-blue-600"
               }`}
             >
-              Mission
+              Our Mission
             </button>
             <button
               onClick={() => setActiveTab("vision")}
@@ -50,7 +52,7 @@ export default function MissionAndVisonSection() {
                   : "bg-white text-blue-600 border border-blue-600"
               }`}
             >
-              Vision
+              Our Vision
             </button>
           </div>
 
@@ -66,7 +68,7 @@ export default function MissionAndVisonSection() {
         </motion.div>
 
         {/* Image Section */}
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+        {/* <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +106,7 @@ export default function MissionAndVisonSection() {
               We Create It
             </h3>
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

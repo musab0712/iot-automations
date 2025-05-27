@@ -74,10 +74,12 @@ const areas = [
 
 export default function WhatWeDoSection() {
   return (
-    <section className=" font-playfair py-16 px-4 max-w-7xl mx-auto">
+    <section className=" font-playfair lg:px-24 md:px-12 px-6 py-10 md:py-24 max-w-7xl mx-auto">
       {/* Intro */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4">What We Do</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-400">
+          What We Do
+        </h2>
         <p className="text-xl font-semibold">
           Empowering Smart Living Through Automation
         </p>
