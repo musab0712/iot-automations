@@ -1,3 +1,4 @@
+import React from "react";
 import Banner from "@/components/common/Banner";
 import Cta from "@/components/common/Cta";
 import FAQ from "@/components/common/Faq";
@@ -8,7 +9,7 @@ import { ServiceDetailPage } from "@/data/ServiceDetailPage";
 import ServicesArea from "./ServicesArea";
 
 export default function page({ params }) {
-  const { slug } = params;
+  const { slug } = React.use(params);
   const service = ServiceDetailPage.find((s) => s.slug === slug);
   if (!service) {
     return (
