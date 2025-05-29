@@ -22,16 +22,28 @@ export default function Footer() {
             redefine how infrastructure operates.
           </p>
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="hover:text-blue-500 transition-colors">
+            <a
+              href="https://www.facebook.com"
+              className="hover:text-blue-500 transition-colors"
+            >
               <FaFacebookF size={20} />
             </a>
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            <a
+              href="https://www.x.com"
+              className="hover:text-blue-400 transition-colors"
+            >
               <FaTwitter size={20} />
             </a>
-            <a href="#" className="hover:text-pink-500 transition-colors">
+            <a
+              href="https://www.instagram.com"
+              className="hover:text-pink-500 transition-colors"
+            >
               <FaInstagram size={20} />
             </a>
-            <a href="#" className="hover:text-blue-300 transition-colors">
+            <a
+              href="https://www.linkedin.com/"
+              className="hover:text-blue-300 transition-colors"
+            >
               <FaLinkedinIn size={20} />
             </a>
           </div>
@@ -44,7 +56,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/services/water-automation"
+                href="/service/water-automation"
                 className="hover:text-blue-400 transition-colors"
               >
                 Water Automation
@@ -53,7 +65,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/services/electric-panel"
+                href="/service/electric-panel"
                 className="hover:text-blue-400 transition-colors"
               >
                 Electric Panel Automation
@@ -62,7 +74,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/services/building-automation"
+                href="/service/building-automation"
                 className="hover:text-blue-400 transition-colors"
               >
                 Building Automation System
@@ -71,7 +83,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/services/custom-solutions"
+                href="/service/customised-automation"
                 className="hover:text-blue-400 transition-colors"
               >
                 Customised Automation Solution
@@ -87,7 +99,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/about"
+                href="/about-us"
                 className="hover:text-blue-400 transition-colors"
               >
                 About Us
@@ -96,7 +108,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="hover:text-blue-400 transition-colors"
               >
                 Contact Us
@@ -105,7 +117,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/mission"
+                href="/about-us"
                 className="hover:text-blue-400 transition-colors"
               >
                 Our Mission
@@ -114,7 +126,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaArrowRight />
               <Link
-                href="/vision"
+                href="/about-us"
                 className="hover:text-blue-400 transition-colors"
               >
                 Our Vision

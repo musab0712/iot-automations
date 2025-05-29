@@ -27,7 +27,7 @@ export default function FAQsticky() {
           may have.
         </p>
         <Link
-          href="/get-started"
+          href="/contact-us"
           className=" font-playfair bg-blue-600 px-8 py-4 text-lg rounded-2xl font-semibold hover:bg-blue-800 transition"
         >
           Get Started
