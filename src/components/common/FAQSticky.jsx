@@ -22,7 +22,7 @@ export default function FAQsticky() {
         <p className="text-base pb-8 font-medium">
           <span className="text-blue-500 font-extrabold">
             Still have questions?
-          </span>{" "}
+          </span>
           Sign up for a free consultation and we will answer any questions you
           may have.
         </p>

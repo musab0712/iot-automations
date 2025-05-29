@@ -140,7 +140,7 @@ export default function Footer() {
           <h2 className="text-xl font-bold mb-4">Contact us</h2>
           <div className="text-sm space-y-3">
             <p className="flex items-start gap-2">
-              <FaMapMarkerAlt className="mt-1" size={30} />
+              <FaMapMarkerAlt className="mt-1 text-lg md:text-2xl" />
               Office No.: 306-in 25/34, East Patel Nagar, Central Delhi, New
               Delhi, Delhi, India, 110008
             </p>

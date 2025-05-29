@@ -29,7 +29,7 @@ export default function Hero() {
   }, [isHovered]);
 
   return (
-    <section className="relative w-full h-96 md:h-[520px]  flex items-center justify-center text-white">
+    <section className="relative w-full h-[450px] md:h-[520px]  flex items-center justify-center text-white px-6 py-10">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -49,7 +49,7 @@ export default function Hero() {
           Automate your all systems with IOT such as
         </h1>
         <div
-          className="h-[60px] md:h-[80px] overflow-hidden relative"
+          className="h-[80px] overflow-hidden relative"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >

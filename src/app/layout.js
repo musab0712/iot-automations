@@ -20,6 +20,7 @@ export const playfairSc = Playfair_Display_SC({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://iotautohub.com"),
   title: "IOT Auto Hub",
   description:
     "At IoT Auto Hub, we don’t just provide automation products, we redefine how infrastructure operates",
