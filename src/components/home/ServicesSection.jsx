@@ -93,7 +93,7 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12">
           {services.map((service, index) => (
-            <Link href={`/services/${service.slug}`} key={index}>
+            <Link href={`/service/${service.slug}`} key={index}>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

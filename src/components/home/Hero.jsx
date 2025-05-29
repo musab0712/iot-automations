@@ -78,7 +78,7 @@ export default function Hero() {
             All Services
           </Link>
           <Link
-            href="/get-started"
+            href="/contact-us"
             className=" font-playfair bg-blue-600 px-8 py-4 text-base rounded-2xl font-semibold hover:bg-blue-800 transition"
           >
             Get Started

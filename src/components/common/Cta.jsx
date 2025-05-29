@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -48,12 +49,18 @@ export default function Cta() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300">
+          <Link
+            href="/services"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300"
+          >
             Get Started
-          </button>
-          <button className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-full shadow-lg transition-all duration-300">
+          </Link>
+          <Link
+            href="/contact-us"
+            className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-full shadow-lg transition-all duration-300"
+          >
             Contact Us
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
